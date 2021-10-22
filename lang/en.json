@@ -1,0 +1,18 @@
+{
+  "project_name": "Todos",
+  "welcome_text": "Try using todo list to manage your todos",
+  "facebook_login": "Sign up using Facebook",
+  "google_login": "Sign up using Google",
+  "vk_login": "Sign up using Vk",
+  "anonymous_login": "Sign up anonymously",
+  "todos for": "Todo list for: ",
+  "todos": "Todos",
+  "settings": "settings",
+  "todo_text": "Todo body",
+  "todo color": "Todo color",
+  "checklist_items": "Todo items",
+  "error_text": "Error",
+  "server_error_text": "Server can't be accessed check your internet connection",
+  "auth_error_text": "Authentication error",
+  "todos_cant_be_empty": "Todo body can't be empty"
+}
