@@ -30,10 +30,9 @@ class TodosPage extends StatelessWidget {
               ),
             ],
           ),
-          body: Text(state.authFailureOrUser.fold(
-            () => 'null user',
-            (a) => a.fold((l) => 'failure', (r) => r.id),
-          )),
+          body: const Center(
+            child: Text("You're on todos page"),
+          ),
         );
       },
     );

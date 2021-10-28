@@ -10,14 +10,12 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
-        currentUser:
-        state.authFailureOrUser.fold(
-          () => context.router.replace(const LoginRoute()),
-          (a) => a.fold(
-            (l) => context.router.replace(const LoginRoute()),
-            (r) => context.router.replace(
-              const TodosRoute(),
-            ),
+        state.maybeMap(
+          orElse: () => context.router.replace(
+            const LoginRoute(),
+          ),
+          authenticated: (_) => context.router.replace(
+            const TodosRoute(),
           ),
         );
       },
